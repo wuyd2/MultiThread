@@ -21,8 +21,9 @@ public class BigCountry {
 		Statement stmt = null;
 		ResultSet rs = null;
 		try {
-			conn = DriverManager.getConnection("jdbc:mysql://localhost/test?useSSL=false&" +
-			        "user=root&password=root");
+//			conn = DriverManager.getConnection("jdbc:mysql://localhost/test?useSSL=false&" +
+//			        "user=root&password=root");
+			conn = DBUtil.getInstance();
 			stmt = conn.createStatement();
 			stmt.executeUpdate("drop table if exists world;");
 			int isCreated = stmt.executeUpdate("create table world(name varchar(20),continent varchar(20),area integer,population integer,gdp integer);");
