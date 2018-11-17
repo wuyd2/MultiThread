@@ -25,7 +25,7 @@ package leetCode;
 1 <= A.length = A[0].length <= 20
 0 <= A[i][j] <= 1
  *
- * 
+ * O(N * M /2
  */
 public class FlippingImage {
 
